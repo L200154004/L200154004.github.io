@@ -31,8 +31,7 @@
 
       // Return a pano image given the panoID.
       function getCustomPanoramaTileUrl(pano, zoom, tileX, tileY) {
-        return 'https://raw.githubusercontent.com/L200154004/L200154004.github.io/master/smanda.jpg'
-            + 'panoReception1024-' + zoom + '-' + tileX + '-' + tileY + '.jpg';
+        return 'https://raw.githubusercontent.com/L200154004/L200154004.github.io/master/smanda.jpg';
       }
 
       // Construct the appropriate StreetViewPanoramaData given
@@ -49,11 +48,11 @@
             copyright: 'Imagery (c) 2010 Google',
             // The definition of the tiles for this panorama.
             tiles: {
-              tileSize: new google.maps.Size(1024, 512),
-              worldSize: new google.maps.Size(2048, 1024),
+              tileSize: new google.maps.Size(1000, 500),
+              worldSize: new google.maps.Size(1000, 500),
               // The heading in degrees at the origin of the panorama
               // tile set.
-              centerHeading: 105,
+              centerHeading: 50,
               getTileUrl: getCustomPanoramaTileUrl
             }
           };
